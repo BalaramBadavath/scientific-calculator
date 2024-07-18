@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>SCIENTIFIC CALCULATOR</h1>
+    <div class="parent">
+        <div class="input">
+            <input type="text" placeholder="0" id="inp">
+        </div>
+        <div class="buttons">
+            <p>
+                <input type="button" value="sin" class="b1 btn" onclick="sine1()">
+                <input type="button" value="cos" class="b1 btn" onclick="cos1()">
+                <input type="button" value="tan" class="b1 btn" onclick="tan1()">
+                <input type="button" value="asin" class="b1 btn" onclick="asin1()">
+                <input type="button" value="acos" class="b1 btn" onclick="acos1()">
+
+            </p>
+
+            <p>
+                <input type="button" value="atan" class="b1 btn" onclick="atan1()">
+                <input type="button" value="pi" class="b1 btn" onclick="cal1(22/7)">
+                <input type="button" value="log" class="b1 btn" onclick="log1()">
+                <input type="button" value="ln" class="b1 btn" onclick="ln1()">
+                <input type="button" value="%" class="b1 btn" onclick="per1()">
+
+            </p>
+
+            <p>
+                <input type="button" value="x2" class="b1 btn" onclick="pow1()">
+                <input type="button" value="x3" class="b1 btn" onclick="pow2()">
+                <input type="button" value="sqrt" class="b1 btn" onclick="squareroot()">
+                <input type="button" value="(" class="b1 btn" onclick="cal1('(')">
+                <input type="button" value=")" class="b1 btn" onclick="cal1(')')">
+
+            </p>
+
+            <p style="margin-top: 40px;">
+                <input type="button" value="7" class="b1 btn" onclick="cal1('7')">
+                <input type="button" value="8" class="b1 btn" onclick="cal1('8')">
+                <input type="button" value="9" class="b1 btn" onclick="cal1('9')">
+                <input type="button" value="del" class="b1 redQ" onclick="delete1()">
+                <input type="button" value="c" class="b1 red" onclick="clear1()">
+
+            </p>
+
+            <p>
+                <input type="button" value="4" class="b1 btn" onclick="cal1('4')">
+                <input type="button" value="5" class="b1 btn" onclick="cal1('5')">
+                <input type="button" value="6" class="b1 btn" onclick="cal1('6')">
+                <input type="button" value="x" class="b1 btn" onclick="cal1('*')">
+                <input type="button" value="/" class="b1 btn" onclick="cal1('/')">
+
+            </p>
+
+            <p>
+                <input type="button" value="1" class="b1 btn" onclick="cal1('1')">
+                <input type="button" value="2" class="b1 btn" onclick="cal1('2')">
+                <input type="button" value="3" class="b1 btn" onclick="cal1('3')">
+                <input type="button" value="+" class="b1 btn" onclick="cal1('+')">
+                <input type="button" value="-" class="b1 btn" onclick="cal1('-')">
+
+            </p>
+            <p>
+                <input type="button" value="0" class="b1 btn" onclick="cal1('0')">
+                <input type="button" value="+/-" class="b1 btn" onclick="plusorminus()">
+                <input type="button" value="." class="b1 btn" onclick="cal1('.')">
+                <input type="button" value="Exp" class="b1 btn" onclick="exp1()">
+                <input type="button" value="=" class="b1 btn" onclick="evaluate1()">
+
+            </p>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
